@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Text Input Boxes</title>
+</head>
+<body>
+  <h1>Vocabulary Library</h1>
+  <form id="textInputForm">
+    <div class="labelblock">
+      <label for="frontText">Main Word:</label>
+      <input type="text" id="frontText" name="frontText" placeholder="Enter front text">
+    </div>
+    <div class="labelblock">
+      <label for="backText">Synonyms:</label>
+      <input type="text" id="backText" name="backText" placeholder="Enter back text">
+    </div>
+
+    <button type="button" onclick="createCard()">Submit</button>
+  </form>
+
+  <div id="cardsContainer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

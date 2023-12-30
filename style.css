@@ -1,0 +1,68 @@
+html{
+  background: linear-gradient(black, rgb(11, 11, 114));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: white;
+}
+body h1{
+  text-align: center;
+  
+}
+body form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+input[type="text"] {
+  width: 300px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 30px;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: linear-gradient(purple,blue);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 150px;
+  min-height: 150px;
+  margin-bottom: 10px;
+  cursor: pointer; /* Add cursor pointer for better UX */
+  position: relative;
+}
+.backText {
+  display: none; /* Initially hide back text */
+}
+.removeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
